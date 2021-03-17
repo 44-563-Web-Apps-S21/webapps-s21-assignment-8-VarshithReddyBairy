@@ -11,9 +11,9 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table>')
+        res.write('<tr><th>LOCATION</th><th>HOURS REQUIRED</th><th>COST</th></tr><tr><td>Disney Land</td><td>5 Hours</td><td>$200</td></tr><tr><td>Miami</td><td>5 Hours</td><td>$300</td></tr><tr><td>Liberty Statue</td><td>3 Hours</td><td>$100</td></tr><tr><td>Las Vegas</td><td>6 Hours</td><td>$500</td></tr>')
+        res.write('</table>')
       res.end('</body></html>')
       //Close the response
     }                           
