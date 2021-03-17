@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Response</title></head>
+    <body>
+        <h1>Varshith Reddy Bairy generates</h1>
+        <button onclick="getSubject()">Get Random Subject</button><br>
+        <div id = "result">The result is here</div>
+
+
+        <script>
+            function getSubject(){
+            fetch(`http://127.0.0.1:3001`).then( (res) => {return res.text()}).then((text) => {document.getElementById("result").innerHTML=text})
+        }
+        </script>
+    </body>
+</html>
